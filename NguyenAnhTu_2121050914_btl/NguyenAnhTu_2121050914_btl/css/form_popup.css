@@ -1,0 +1,83 @@
+.show-edit
+,.show-delete
+,.show-logout
+,.show-edit-term
+,.show-delete-term{
+    display: flex !important;
+    transition: all linear 0.5s;
+}
+
+.edit-form,
+.delete-form
+,.logout-form,
+.edit-form-term,
+.delete-form-term{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    inset: 0;
+    background-color: rgba(28, 28, 28,0.8);
+    z-index: 11;
+    transition: all linear 0.3s;
+    display: none;
+}
+.wrapper-edit,
+.wrapper-delete
+,.wrapper-logout,
+.wrapper-edit-term,
+.wrapper-delete-term{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    transform: translateY(-100px);
+    border-radius: 5px;
+    width: 400px;
+    height: 140px;
+    animation: fadeIn linear 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-250px);
+    }
+}
+
+.input-title{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.input-title h3{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.input-title h5{
+    font-size: 0.9rem;
+}
+
+
+.input-actions{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-actions input[type='button']:first-child{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+

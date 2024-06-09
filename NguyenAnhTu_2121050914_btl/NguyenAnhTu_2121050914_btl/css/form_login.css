@@ -1,0 +1,99 @@
+.show-login {
+    display: flex !important;
+    transition: all linear 0.5s;
+
+}
+
+.login-form {
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+    background-color: rgba(28, 28, 28,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: all linear 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-250px);
+    }
+}
+
+.wrapper-login {
+    width: 450px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100px);
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(178, 178, 178, 0.5);
+    transition: all linear 0.3s;
+    animation: fadeIn linear 0.3s;
+}
+
+.wrapper-login form {
+    width: 100%;
+}
+
+.wrapper-login .icon-back {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.wrapper-login .input-title {
+    border-bottom: 1px solid #787878;
+    text-align: center;
+    width: 100%;
+}
+
+.wrapper-login .input-title h3 {
+    font-weight: 600;
+    color: #000;
+}
+
+.wrapper-login form .input-box {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 1px solid #6b6b6b;
+}
+
+.wrapper-login form .input-box input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    outline: none;
+    color: #000;
+}
+
+.wrapper-login form .input-box input::placeholder {
+    font-size: 0.8rem;
+}
+
+.wrapper-login form input[type="button"] {
+    width: 100%;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    transition: all linear 0.3s;
+}
+
+.wrapper-login form input[type="button"]:hover {
+    background-color: #282828;
+}
+
+.login-form .wrapper-login form #noti {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: var(--bs-danger);
+}

@@ -1,0 +1,12 @@
+#choose-file {
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    padding: 4px;
+    cursor: pointer;
+    transition: all linear 0.3s;
+}
+
+#choose-file:hover {
+    opacity: 0.8;
+}
